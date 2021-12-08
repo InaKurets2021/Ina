@@ -1,0 +1,248 @@
+.header {
+/* headerMenu */
+position: absolute;
+width: 1312px;
+height: 37px;
+left: 309px;
+top: 40px;
+}
+.logo {
+/* MOVEE */
+position: absolute;
+width: 115px;
+height: 37px;
+left: 309px;
+top: 40px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+color: #333333;
+}
+.menu {
+/* menu */
+}
+.text1 {
+/* Цены */
+position: absolute;
+width: 53px;
+height: 22px;
+left: 738px;
+top: 48px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+color: #333333;
+}
+.text2 {
+/* Автопарк */
+position: absolute;
+width: 91px;
+height: 22px;
+left: 837px;
+top: 48px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #333333;
+}
+.text3 {
+/* Отзывы */
+position: absolute;
+width: 74px;
+height: 22px;
+left: 978px;
+top: 48px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #333333;
+}
+.text4 {
+/* Контакты */
+position: absolute;
+width: 90px;
+height: 22px;
+left: 1102px;
+top: 48px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #333333;
+}
+.number{
+/* number */
+position: absolute;
+width: 209px;
+height: 26px;
+left: 1412px;
+top: 46px;
+text-decoration: underline;
+/* 8(029)-999-12-13 */
+position: absolute;
+width: 206px;
+height: 19px;
+left: 1415px;
+top: 46px;
+/* phone */
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #333333;
+}
+.firstBlock {
+/* 1. firstBlock */
+position: absolute;
+width: 1920px;
+height: 650px;
+left: 0px;
+top: 0px;
+}
+.images {
+/* images */
+position: absolute;
+width: 547px;
+height: 42px;
+left: 307px;
+top: 523px;
+}
+.truck {
+/* truck */
+height: 7.800434112548828px;
+width: 13.607392311096191px;
+left: 338.201904296875px;
+top: 529.933837890625px;
+border-radius: 0px;
+bottom: 85px;
+}
+.text1 {
+/* Более 800 переездов */
+width: 91px;
+height: 42px;
+left: 369px;
+top: 523px;
+color: #333333;
+}
+.triggerTwo {
+/* triggerTwo */
+position: absolute;
+width: 40px;
+height: 37.78px;
+left: 500px;
+top: 523.11px;
+}
+.text2 {
+/* Бережная упаковка */
+position: absolute;
+width: 90px;
+height: 42px;
+left: 550px;
+top: 523px;
+}
+.money {
+/* money */
+position: absolute;
+width: 41px;
+height: 40.52px;
+left: 667px;
+top: 523.24px;
+}
+.text3 {
+/* Фиксированная цена */
+position: absolute;
+width: 136px;
+height: 42px;
+left: 718px;
+top: 523px;
+color: #333333;
+}
+.mainTitle {
+/* mainTitle */
+position: absolute;
+width: 480px;
+height: 198px;
+left: 303px;
+top: 141px;
+}
+.title {
+/* Квартирные переезды */
+position: absolute;
+width: 480px;
+height: 138px;
+left: 303px;
+top: 141px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 105.4%;
+color: #333333;
+}
+.subTitle {
+/* По Бресту и области */
+position: absolute;
+width: 343px;
+height: 32px;
+left: 307px;
+top: 307px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+color: #333333;
+}
+.man {
+/* Rectangle 3 */
+position: absolute;
+width: 553px;
+height: 629px;
+left: 1023px;
+top: 21px;
+background: url(.png);
+}
+.mainButton {
+/* mainButton */
+position: absolute;
+width: 314px;
+height: 70px;
+left: 307px;
+top: 389px;
+}
+.buttontext {
+   /* Заказать */
+position: absolute;
+width: 113px;
+height: 29px;
+left: 403px;
+top: 405px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #F2F2F2;
+}
+.menu {
+   /* menu */
+position: absolute;
+width: 1920px;
+height: 650px;
+left: 0px;
+top: 0px;
+}
+
+
+
