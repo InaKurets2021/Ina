@@ -1,13 +1,19 @@
 @import url(./nullstyle.css);
+body {
+font-family: 'Montserrat', sans-serif;
+}
+:root {
+  --yellow: #FED100;
+  --gray: #333333;
+  --red: #ff352b;
+}
 .firstblock {
 /* menu */
-width: 1920px;
-height: 650px;
-background: #FED100;
+background-color: var(--yellow);
 }
 .container {
 max-width: 1200px;
-margin: 0 auto;
+margin: 0 auto
 }
 .headermenu {
 display: flex;
@@ -21,68 +27,17 @@ height: 64px;
 font-weight: 600;
 font-size: 30px;
 line-height: 37px;
-color: #333333;
+color: var(--gray);
 }
 .menu {
 display: flex;
 gap: 32px;
 }
-.text1 {
-/* Цены */
-width: 53px;
-height: 22px;
-left: 738px;
-top: 48px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #333333;
-}
-.text2 {
-/* Автопарк */
-width: 91px;
-height: 22px;
-left: 837px;
-top: 48px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #333333;
-}
-.text3 {
-/* Отзывы */
-width: 74px;
-height: 22px;
-left: 978px;
-top: 48px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #333333;
-}
-.text4 {
-/*Контакты*/
- width: 90px;
-height: 22px;
-left: 1102px;
-top: 48px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-}
 .phone {
 font-weight: 600;
 font-size: 24px;
 line-height: 29px;
-color: #333333;
+color: var(--gray);
 text-decoration: underline;
 }
 .content {
@@ -92,62 +47,40 @@ display: flex;
 flex: 0 1 50%;
 }
 .maintitle {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 70px;
-  line-height: 105.4%;
-  color: #333333; 
-  margin: 0 0 28px 0;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 105.4%;
+color: var(--gray); 
+margin: 0 0 28px 0;
 }
 .subtitle {
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
 line-height: 37px;
-color: #333333;
+color: var(--gray);
 margin: 0 0 50px 0;
 }
 .buttom {
 display: inline-block;
-background-color: #ff352b;
-color: #f2f2f2;
+background-color: var(--red);
 padding: 16px 50px;
 margin: 0 0 50px 0;
 cursor: pointer;
+color: #f2f2f2;
 }
 .images {
 display: flex;
 align-items: center;
 gap: 40px;
 }
-.truck {
-display: flex;
-gap: 8px;
-align-items: center;
-}
 .text {
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 21px;
-color: #333333;
-}
-.triggertwo {
-display: flex;
-gap: 8px;
-align-items: center;
-}
-.money {
-display: flex;
-gap: 8px;
-align-items: center;
-}
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  }
 .man {
-position: absolute;
-width: 553px;
-height: 629px;
-left: 1023px;
-top: 21px;
-background: url(.png);
+margin: -80px 0 0 0;
 }
 
