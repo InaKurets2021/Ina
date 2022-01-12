@@ -9,6 +9,7 @@ font-size: 1rem;
   --red: #ff352b;
   --orange: #f58b00;
   --white: #f8f8f8;
+  --black: #030303;
 }
 .banner {
 /* menu */
@@ -59,30 +60,30 @@ cursor: pointer;
 color: var(--red);
 }
 .header__burger {
-  width: 2rem;
-  height: 0.125rem;
-  background-color: var(--gray);
-  position: relative;
-  cursor: pointer;
-  display: none;
+width: 2rem;
+height: 0.125rem;
+background-color: var(--gray);
+position: relative;
+cursor: pointer;
+display: none;
 }
 .header__burger::before {
-  content: "";
-  position: absolute;
-  top: 0.5rem;
-  width: 2rem;
-  height: 0.125rem;
-  background-color: var(--gray);
-  cursor: pointer;
+content: "";
+position: absolute;
+top: 0.5rem;
+width: 2rem;
+height: 0.125rem;
+background-color: var(--gray);
+cursor: pointer;
 }
 .header__burger::after {
-  content: "";
-  position: absolute;
-  bottom: 0.5rem;
-  width: 2rem;
-  height: 0.125rem;
-  background-color: var(--gray);
-  cursor: pointer;
+content: "";
+position: absolute;
+bottom: 0.5rem;
+width: 2rem;
+height: 0.125rem;
+background-color: var(--gray);
+cursor: pointer;
 }
 .banner__content {
 display: flex;
@@ -185,4 +186,61 @@ height: 100%;
   .header__burger {
     display: block;
   }
+}
+
+.second_block {
+background-color: var(--white);
+}
+.second_container {
+max-width: 67rem;
+padding: 6rem 0 0 0;
+margin: 0 auto;
+display: flex;
+}
+.second_maintitle {
+text-align: center;
+font-weight: 600;
+font-size: 2rem;
+line-height: 2rem;
+padding:  6rem 0 0 0;
+}
+.second_column {
+flex: 0 0 50%;
+margin: 0 0 3rem 0;
+display: flex;
+}
+.second_number {
+font-weight: 300;
+font-size: 3rem;
+line-height: 3rem;
+text-shadow:1px 1px 1px #FED100;
+padding: 0 3rem 0 0;
+}
+
+.second_subtitle {
+font-weight: 31rem;
+font-size: 1rem;
+line-height: 1.5rem;
+margin: 0.3rem 0 1rem 0;
+}
+.second_text {
+font-size: 1rem;
+line-height: 1.3rem;
+padding: 0 1rem 0 0;
+}
+
+@media (max-width: 482px) {
+  .second_text {
+    display: none;
+      }
+  .second_number {
+    display: block;
+  }
+.second_subtitle {
+font-size: 16px;
+ align-items: center;
+}
+.second_column {
+  flex: 0 0 100%;
+}
 }
