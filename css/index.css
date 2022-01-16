@@ -267,15 +267,15 @@ background-color: var(--white);
 .price__title {
 text-align: center;
 font-weight: 600;
-font-size: 30px;
-line-height: 37px;
+font-size: 2rem;
+line-height: 2.5rem;
 padding: 6rem 0 0 0;
 }
 .price__subtitle {
 text-align: center;
 font-weight: 600;
-font-size: 24px;
-line-height: 29px;
+font-size: 1.5rem;
+line-height: 2rem;
 padding: 1.5rem 0 0 0;
 }
 .price__container {
@@ -286,7 +286,7 @@ display: flex;
 margin: 0 auto; 
 }
 .price__card {
-margin: 0 0  3rem 0;
+margin: 0 0 3rem 0;
 border: 1px solid var(--card-border);
 box-sizing: border-box;
 flex: 0 1 33.33%;
@@ -313,12 +313,12 @@ border: 1px solid var(--yellow);
 text-align: center;
 padding: 5rem 0 0 0;
 font-weight: 600;
-font-size: 24px;
-line-height: 29px;
+font-size: 1.5rem;
+line-height: 2rem;
 }
 .price__card_link {
-font-size: 16px;
-line-height: 21px;
+font-size: 1rem;
+line-height: 1.3rem;
 text-align: center;
 padding: 4rem 0 1.5rem 0;
 }
@@ -328,16 +328,16 @@ padding: 0 0 3rem 0;
 .price__card_sum {
 text-align: center;
 font-weight: 600;
-font-size: 30px;
-line-height: 37px;
+font-size: 2rem;
+line-height: 2.5rem;
 padding: 0 0 0 0;
 justify-content: center;;
 }
 .price__card_buttom {
 padding: 1rem 5rem;
 font-weight: 500;
-font-size: 20px;
-line-height: 24px;
+font-size: 1.3rem;
+line-height: 1.5rem;
 display: flex;
 background-color: var(--yellow);
 cursor: pointer;
@@ -351,7 +351,7 @@ display: none;
 @media (max-width: 768px) {
   .price {
     background-color: var(--white);
-    padding-bottom: 115px;
+    padding-bottom: 8rem;
   }
   .price__container {
     padding-top: 0;
@@ -374,45 +374,45 @@ display: none;
     background: none;
     cursor: pointer;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align: center;
     border-bottom: 1px solid var(--gray);
   }
 }
 @media (max-width: 480px) {
   .price {
-    padding-bottom: 115px;
-    padding-bottom: 30px;
+    padding-bottom: 8rem;
+    padding-bottom: 2rem;
   }
   .price__title {
     padding-top: 1.5rem;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
   }
   .price__subtitle {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
   .price__card_title {
-    padding-top: 24px;
-    font-size: 18px;
-    line-height: 22px;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
   .price__card {
     border: none;
     display: none;
   }
   .price__allprice {
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
   .price__card_link {
-    padding-top: 24px;
+    padding-top: 1.5rem;
   }
   .price__link {
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
   }
   .price__card_buttom {
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
   }
 }
