@@ -497,19 +497,12 @@ height: 100%;
 .autopark__end {
 display: none;
 }
-.active_point {
-display: none;
-}
-.point {
-display: none;
-}
 .autopark_buttom_end {
 display: none; 
 }
 @media (max-width: 1050px) {
 .autopark__column {
 display: block;
-padding: 0 0 0 3rem;
 margin: 0 auto;
 }
 }
@@ -531,6 +524,9 @@ display: none;
 .autopark__column {
 margin: 0 auto;
 }
+.autopark__column:first-child {
+display: none;
+} 
 .autopark_buttom {
 display: none;
 }
@@ -566,13 +562,13 @@ margin: 0 auto;
 .autopark__subtitle {
 display: none;
 }
-ul {
+.points {
 max-width: 7rem;
 margin: 0 auto;
 display: flex;
 gap: 1rem;
 }
-li {
+.point {
 list-style-type: none;
 width: 0.5rem;
 height: 0.5rem;
@@ -580,7 +576,7 @@ background: var(--black);
 border-radius: 50%;
 position: relative;
 }
-li:hover:before {
+.point:hover:before {
 content: '';
 position: absolute;
 left: 50%;
@@ -597,7 +593,7 @@ border-radius: 50%;
 border: none;
 padding: 0 auto;
 margin:0 auto;
-font-size: 1.3rem;
+font-size: 1rem;
 line-height: 1.5rem;
 }
 .autopark__menu {
