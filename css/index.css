@@ -728,14 +728,14 @@ padding: 3rem 0 0 0;
 }
 input[type="text"]{
 border: 1px solid var(--card-border);
-padding: 1rem 9rem 1rem 0;
+padding: 1rem 9rem 1rem 1rem;
 }
 input[type="text"]:focus {
 box-shadow: 1px 1px 2px 0 var(--yellow);
 }
 input[type="tel"] {
 border: 1px solid var(--card-border);
-padding: 1rem 9rem 1rem 0;
+padding: 1rem 9rem 1rem 1rem;
 }
 input[type="tel"]:focus {
 box-shadow: 1px 1px 2px 0 var(--yellow);
@@ -859,8 +859,8 @@ display: flex;
 padding: 5rem 0 0 0;
 gap: 4rem;
 }
-.order__agree {
-max-width: 16rem;
+.order__row_column {
+margin: 0 auto;
 }
 .order__buttom {
 width: 15rem;
@@ -897,6 +897,7 @@ padding: 1rem 0 0 0;
 flex-wrap: wrap;
 justify-content: center;
 text-align: center;
+padding: 3rem 0 0 0;
 }
 .order__city {
 display: none;
@@ -930,8 +931,6 @@ background-color: var(--red);
 cursor: pointer;
 color: var(--white);
 margin: 1rem auto;
-padding: 1rem 3rem;
-width: 18rem;
 }
 }
 
