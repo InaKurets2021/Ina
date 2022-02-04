@@ -1,0 +1,191 @@
+.autopark {
+	background-color: var(--white);
+	}
+	.autopark__title {
+	text-align: center;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	padding: 6rem 0 0 0;
+	}
+	.autopark__subtitle {
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 1rem 0 0 0;
+	}
+	.autopark__container {
+	max-width: 75rem;
+	padding: 3rem 1rem 0 1rem;
+	margin: 0 auto; 
+	}
+	.autopark__menu {
+	display: flex;
+	gap: 1rem;
+	max-width:40rem;
+	margin: 0 auto;
+	}
+	.autopark__link {
+	border: 1px solid var(--card-border);
+	padding: 1rem 4rem;
+	margin: 4rem auto;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	cursor: pointer;
+	background: var(--white);
+	}
+	.autopark__link:hover {
+	border: 1px solid var(--yellow);
+	}
+	.autopark__content {
+	display: flex;
+	padding: 3.5rem 0 0 0;
+	}
+	.autopark__column {
+	padding: 0 0 0 6rem;
+	max-width: 40rem;
+	}
+	.autopark__maintext {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 600;
+	}
+	.autopark__text_column {
+	display: flex;
+	margin: 2.3rem 0;
+	gap: 1rem;
+	}
+	.autopark__text {
+	font-size: 1rem; 
+	line-height: 1.3rem;
+	}
+	.autopark_buttom {
+	padding: 1rem 5rem;
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	display: flex;
+	background-color: var(--yellow);
+	cursor: pointer;
+	color: var(--black);
+	justify-content: center;
+	margin: 0 0 3rem 0;
+	}
+	.autopark_buttom:hover {
+	color: var(--white);
+	}
+	.autopark__img {
+	width: 100%;
+	height: 100%;
+	}
+	.autopark__end {
+	display: none;
+	}
+	.autopark_buttom_end {
+	display: none; 
+	}
+	@media (max-width: 1050px) {
+	.autopark__column {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	}
+	}
+	@media (max-width: 920px) {
+	.autopark {
+	display: block;
+	}
+	.autopark__column{
+	margin: 0 0 2rem 0;
+	}
+	}
+	 @media (max-width: 820px) {
+	.autopark__maintext{
+	display: none;
+	}
+	.autopark__text_column {
+	display: none;
+	}
+	.autopark__column {
+	margin: 0 auto;
+	}
+	.autopark__column:first-child {
+	display: none;
+	} 
+	.autopark_buttom {
+	display: none;
+	}
+	.autopark__end {
+	justify-content: center;
+	margin: 1.5rem auto;
+	display: flex;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1rem;
+	}
+	.autopark_buttom_end {
+	padding: 1rem 5rem;
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	display: flex;
+	background-color: var(--yellow);
+	cursor: pointer;
+	color: var(--black);
+	justify-content: center;
+	margin: 2rem auto;
+	max-width: 18rem;
+	}
+	.autopark_buttom_end:hover {
+	color: var(--white);
+	}
+	.autopark__link {
+	border: none;
+	gap: 1.5rem;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	padding: 0 0 0 0;
+	margin: 0 auto;
+	}
+	.autopark__subtitle {
+	display: none;
+	}
+	.points {
+	max-width: 7rem;
+	margin: 0 auto;
+	display: flex;
+	gap: 1rem;
+	}
+	.point {
+	list-style-type: none;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: var(--black);
+	border-radius: 50%;
+	position: relative;
+	}
+	.point:hover:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 2px solid var(--yellow);
+	border-radius: 50%;
+	}
+	}
+	@media (max-width: 480px) {
+	.autopark__link {
+	border: none;
+	padding: 0 auto;
+	margin:0 auto;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	}
+	.autopark__menu {
+	margin: 0 auto;
+	}
+	}

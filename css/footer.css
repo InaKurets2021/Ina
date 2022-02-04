@@ -1,0 +1,138 @@
+.footer {
+	background-color: var(--yellow);
+	}
+	.footer__container {
+	max-width: 75rem;
+	margin: 0 auto;
+	padding: 6rem 0; 
+	display: flex; 
+	}
+	.footer__column {
+	display: block;
+	flex: 0 1 25%;
+	text-align: start;
+	}
+	.footer__title {
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 2.3rem;  
+	}
+	.footer__subtitle {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	padding: 2rem 0 0 0;
+	}
+	.footer__link {
+	max-width: 6rem;
+	max-height: 9rem;
+	font-weight: 500;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	margin: 1rem auto;
+	padding-bottom: 1rem;
+	}
+	a: {
+	padding: 1rem 1rem;
+	}
+	a:hover { 
+	text-decoration: underline; 
+	color: var(--red);
+	cursor: pointer;
+	} 
+	.footer__contacts{
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	}
+	.footer_email {
+	text-decoration: underline;
+	padding: 2rem 1rem;
+	cursor: pointer;
+	text-align: center;
+	}
+	.footer_email:hover {
+	color: var(--red);
+	}
+	.footer__text {
+	text-align: center;
+	}
+	.footer__social {
+	display: flex;
+	gap: 2rem;
+	padding: 1rem 2rem;
+	justify-content: center;
+	}
+	.footer__buttom {
+	width: 15rem;
+	background-color: var(--yellow);
+	padding: 1rem 2rem;
+	cursor: pointer;
+	color: var(--black);
+	border: 1px solid var(--black);
+	text-align: center;
+	}
+	.footer__buttom:hover {
+	background-color: var(--white);
+	border: none;
+	}
+	.footer__number {
+	font-weight: 500;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	text-decoration: underline;
+	padding: 0.5rem 2rem;
+	cursor: pointer;
+	}
+	.footer__number:hover {
+	color: var(--red);
+	}
+	.footer__buttom_end {
+	display: none;
+	}
+	@media (max-width: 820px) {
+	.footer__container {
+	display: block;   
+	}
+	.footer__column {
+	text-align: center;
+	margin: 2.5rem auto;
+	}
+	.footer__subtitle {
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	}
+	.footer__link {
+	display: block;
+	}
+	.footer__text {
+	display: none;
+	}
+	.footer__social
+	{
+	display: none;
+	}
+	.footer__buttom {
+	display: none;
+	}
+	.footer__number {
+	display: none;
+	}
+	.footer__buttom_end {
+	padding: 1rem 6rem;
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	display: flex;
+	background-color: var(--yellow);
+	cursor: pointer;
+	color: var(--black);
+	justify-content: center;
+	margin: 2.5rem 2rem;
+	border: 1px solid var(--black);
+	}
+	.footer__buttom_end:hover {
+	background-color: var(--white);
+	border: none;
+	}
+	}
