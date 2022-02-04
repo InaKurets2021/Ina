@@ -1,0 +1,241 @@
+.order {
+	background-color: var(--white);
+	}
+	.order__container {
+	max-width: 47rem;
+	padding: 8rem 1rem 0 1rem;
+	margin: 0 auto; 
+	}
+	.order__maintitle {
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	}
+	.order__subtitle {
+	font-size: 1rem;
+	line-height: 1.3rem;
+	padding-top: 0.7rem;
+	}
+	.order__content {
+	margin: 0 0;
+	padding: 3rem 0 0 0;
+	}
+	.order__column_form {
+	display: flex;
+	gap: 4.5rem;
+	padding: 3rem 0 0 0;
+	}
+	input[type="text"]{
+	border: 1px solid var(--card-border);
+	padding: 1rem 9rem 1rem 1rem;
+	}
+	input[type="text"]:focus {
+	box-shadow: 1px 1px 2px 0 var(--yellow);
+	}
+	input[type="tel"] {
+	border: 1px solid var(--card-border);
+	padding: 1rem 9rem 1rem 1rem;
+	}
+	input[type="tel"]:focus {
+	box-shadow: 1px 1px 2px 0 var(--yellow);
+	}
+	.order__city {
+	display: flex;
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	gap: 15rem;
+	padding: 4rem 0 0 0;
+	}
+	.order__column {
+	display: flex;
+	gap: 4.5rem;
+	padding: 2rem 0 4rem 0;
+	}
+	select {
+	border: 1px solid var(--card-border);
+	padding: 1rem 13rem 1rem 1rem;
+	}
+	select:focus {
+	box-shadow: 1px 1px 2px 0 var(--yellow);
+	}
+	.order__pay_title {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	font-weight: bold;
+	}
+	.order__radio {
+	display: flex;
+	gap: 2.5rem;
+	}
+	.order__pay_buttom {
+	display: flex;
+	gap: 1rem;
+	padding: 2rem 0 0 0;
+	}
+	.hidden-radio {
+	-webkit-appearance: none;
+	position: absolute;
+	}
+	.order__pay_buttom .radio {
+	background: var(--white);
+	position: relative;
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 2px solid var(--yellow);
+	border-radius: 50%;
+	}
+	.order__pay_buttom .radiomark {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 60%;
+	height: auto;
+	display: none;
+	}
+	.order__pay_buttom input:checked +.radio .radiomark{
+	display: block;
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border: 1px solid var(--yellow);
+	border-radius: 50%;
+	}
+	.order__services {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	font-weight: bold;
+	padding: 4rem 0 0 0;
+	}
+	.order__checkbox {
+	padding: 2rem 0;
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	flex-wrap: wrap;
+	}
+	.checkbox__buttom {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	}
+	.checkbox__buttom .checkbox {
+	background: var(--white);
+	position: relative;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 2px solid var(--card-border);
+	}
+	.hidden-checkbox {
+	-webkit-appearance: none;
+	position: absolute;
+	}
+	.checkbox__buttom .checkmark {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	height: auto;
+	display: none;
+	}
+	.checkbox__buttom input:checked +.checkbox .checkmark{
+	display: block;
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1px solid var(--yellow);
+	}
+	.order__row {
+	display: flex;
+	padding: 5rem 0 0 0;
+	gap: 4rem;
+	}
+	.order__row_column {
+	margin: 0 auto;
+	}
+	.order__buttom {
+	width: 15rem;
+	background-color: var(--red);
+	padding: 1rem 3rem;
+	cursor: pointer;
+	color: var(--white);
+	text-align: center;
+	margin: 1rem auto;
+	}
+	.order__buttom_end {
+	display: none;
+	}
+	.order__agree {
+	font-size: 0.7rem;
+	line-height: 1rem;
+	text-align: center;
+	letter-spacing: 0.015em;  
+	}
+	@media (max-width: 820px) {
+	.order {
+	display: block;
+	}
+	.order__container {
+	display: block;
+	 }
+	.order__maintitle {
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	text-align: center;
+	}
+	.order__subtitle {
+	text-align: center;
+	font-size: 1rem;
+	padding: 1rem 0 0 0;
+	}
+	.order__column_form {
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 3rem 0 0 0;
+	}
+	.order__city {
+	display: none;
+	}
+	.order__column {
+	display: none;
+	}
+	.order__pay {
+	display: none;
+	}
+	.order__services {
+	display: none;
+	}
+	.order__checkbox {
+	display: none;
+	}
+	.order__time {
+	display: none;
+	}
+	.order__buttom {
+	display: none;
+	}
+	.order__buttom_end {
+	padding: 1rem 4rem;
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	display: block;
+	justify-content: center;
+	background-color: var(--red);
+	cursor: pointer;
+	color: var(--white);
+	margin: 1rem auto;
+	}
+	}
+	
