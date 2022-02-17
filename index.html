@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="./css/index.css">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
       <title>FirstProject</title>
+      
 </head>
 
 <body>
@@ -14,14 +15,16 @@
       <div class="container">
             <div class="header" id="header">
                   <div class="header__logo">MOVEE</div>
-                  <div class="header__menu"> 
+                  <div class="header__menu" id="header__menu"> 
                         <a href="#price">Цены</a>
                         <a href="#autopark">Автопарк </a>   
                         <a href="#reviews">Отзывы </a>    
                         <a href="#order">Контакты</a>
                   </div>
                   <div class="header__phone">8(029)999-12-13</div>
-                  <div class="header__burger"></div>
+                  <button class="header__burger" id="header__burger" onclick="toggleMenu()"> 
+                        <div class="line"></div>
+                  </button> 
             </div>
             <div class="banner__content">
             <div class="banner__column">
@@ -129,10 +132,11 @@
       <div class="autopark__subtitle">10 видов автомобилей от 800 кг до 10 тонн</div>
       <div class="autopark__container">
             <div class="autopark__menu">
-                  <button class="autopark__link">Газели</button>
-                  <button class="autopark__link">Каблуки</button>
-                  <button class="autopark__link">Грузовики</button>
+                  <button class="autopark__link" onclick="currentSlide(1)">Газели</button>
+                  <button class="autopark__link" onclick="currentSlide(2)">Каблуки</button>
+                  <button class="autopark__link" onclick="currentSlide(3)">Грузовики</button>
             </div>
+<div class="slider">
             <div class="autopark__content">
             <div class="autopark__column">
                   <div class="autopark__maintext">Газель 3 метра</div>
@@ -158,6 +162,63 @@
              <img class="autopark__img" src="./img/lorry.png" alt="lorry">
             </div>
             </div>
+            <div class="autopark__content">
+                  <div class="autopark__column">
+                        <div class="autopark__maintext">Газель 3 метра</div>
+                        <div class="autopark__text_column">
+                              <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                              <div class="autopark__text">Ширина 2 м</div>
+                        </div>
+                        <div class="autopark__text_column">
+                              <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                              <div class="autopark__text">Высота 2 м</div>
+                        </div>
+                        <div class="autopark__text_column">
+                              <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                              <div class="autopark__text">Объем 16 м³</div>
+                        </div>
+                        <div class="autopark__text_column">
+                              <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                              <div class="autopark__text">Грузоподъемность 1,5 т</div>
+                        </div>
+                        <span class="autopark_buttom">Заказать</span>
+                  </div>
+                  <div class="autopark__column">
+                   <img class="autopark__img" src="./img/truck_yel.png" alt="lorry">
+                  </div>
+            </div>
+            <div class="autopark__content">
+            <div class="autopark__column">
+                              <div class="autopark__maintext">Газель 3 метра</div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Ширина 2 м</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Высота 2 м</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Объем 16 м³</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Грузоподъемность 1,5 т</div>
+                              </div>
+                              <span class="autopark_buttom">Заказать</span>
+                        </div>
+                        <div class="autopark__column">
+                         <img class="autopark__img" src="./img/truck blue.png" alt="lorry">
+                        </div>
+            </div>
+
+<a class="prev" onclick="minusSlide()">&#10094;</a>
+<a class="next" onclick="plusSlide()">&#10095;</a>
+</div>
+            
+
+
             <div class="autopark__end">Газель 3 метра/1.5тонны</div>
             <ul class="points">
                   <li class="point"></li>
@@ -179,11 +240,18 @@
                   <p class="reviews__card_number">24.03.2019</p>
                   <img class="reviews__card_stars" src="./img/stars.png" alt="stars"> 
             </div>   
-            <p class="reviews__card_text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
-                        во двор, он проявил себя как компетентный 
-                        и профессиональный сотрудник, за что ему огромное...</p>  
-            <span class="reviews__link">Читать полностью</span>
-            </div>
+<p class="reviews__card_text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
+во двор, он проявил себя как компетентный 
+и профессиональный сотрудник, за что ему огромное спасибо...</p>  
+      
+<button class="reviews__link">Читать полностью</button>
+<div class="nexttext"> 
+      <p>Заказ доставлен как и договаривались.
+            Консультация и доставка - все отлично. Молодцы.</p>
+</div>
+</div>
+           
+
             <div class="reviews__card_main">
                  <h2 class="reviews__card_title">Светлана Васильевна</h2> 
                  <div class="reviews__card_subtitle">
@@ -192,7 +260,12 @@
             </div> 
             <p class="reviews__card_text">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  Водитель заранее позвонил, предупредил, что задерживается.
                         Когда....</p>
-            <span class="reviews__link">Читать полностью</span>     
+            
+            <button class="reviews__link">Читать полностью</button>
+             <div class="nexttext"> 
+            <p>Заказ доставлен как и договаривались.
+            Консультация и доставка - все отлично. Молодцы.</p>
+            </div> 
             </div>
             <div class="reviews__card">
                  <h3 class="reviews__card_title">Ольга Петрова</h3> 
@@ -201,7 +274,12 @@
                   <img class="reviews__card_stars" src="./img/stars.png" alt="stars"> 
             </div> 
             <p class="reviews__card_text">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо всяких заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности. Особая благодарность Александру за его...</p>
-            <span class="reviews__link">Читать полностью</span>
+           
+            <button class="reviews__link">Читать полностью</button>
+            <div class="nexttext"> 
+                  <p>Заказ доставлен как и договаривались.
+                        Консультация и доставка - все отлично. Молодцы.</p>
+            </div>
             </div>
       </div>
       <button class="reviews_button">Все отзывы</button> 
@@ -211,17 +289,17 @@
       <div class="order__container"> 
       <div class="order__maintitle">Закажи  переезд прямо сейчас со скидкой %</div>
       <div class="order__subtitle">Мы перезвоним в течении 10 секунд</div>
- <form name="order__form" method="get" action="#">    
+<form name="order__form" method="get" action="#" onsubmit="return validate ()">    
 <div class="order__column_form">
-<div><input placeholder="Ваше имя" type="text" name="userpass" value=""></div>
-<div><input placeholder="Телефон" type="tel" name="usertel" value=""></div>
+<div><input placeholder="Ваше имя" type="text" id="username" value=""></div>
+<div><input placeholder="Телефон" type="tel" id="usertel" value=""></div>
 </div>
 <div class="order__city">
 <p>Укажите область</p>
 <p>Укажите город</p>
 </div>
 <div class="order__column">
-<select  name="oblast" >
+<select  name="oblast" id="a">
       <option value="Minsk">Минская</option>
       <option value="Vitebsk">Витебская</option>
       <option value="Mogilev">Могилевская</option>
@@ -229,15 +307,18 @@
       <option value="Brest">Брестская</option>
       <option value="Grodno">Гродненская</option>
 </select>
-<select name="city" >
-            <option value="Minsk">Минск</option>
-            <option value="Vitebsk">Витебск</option>
-            <option value="Mogilev">Могилев</option>
-            <option value="Gomel">Гомель</option>
-            <option value="Brest">Брест</option>
-            <option value="Grodno">Гродно</option>
+<select name="city" id="b" >
+      <option value="Minsk">Минск</option>
+      <option value="Vitebsk">Витебск</option>
+      <option value="Mogilev">Могилев</option>
+      <option value="Gomel">Гомель</option>
+      <option value="Brest">Брест</option>
+      <option value="Grodno">Гродно</option>
 </select>
 </div>
+<div class="order__column2">
+ <input type='text' id='cityvalue'/>   
+ </div>
 
 <div class="order__pay">
       <p class="order__pay_title">Способ оплаты</p>
@@ -256,9 +337,14 @@
             <img class="radiomark" src="./img/radio.png" alt="radio_point"></div>  Банковский перевод </label> </div>
 </div>
 
-<p class="order__services">Дополнительные услуги</p>
 
-<div class="order__checkbox">
+<div class="order__js">
+<p class="order__services">Дополнительные услуги</p>
+<p id="order__show" onclick="order__show()"></p>
+<p id="order__hidden"; style="display:none" onclick="order__hidden()"></p>
+</div>
+<div id="checkbox_hide" style="display:none">
+ <div class="order__checkbox">
 <label class="checkbox__buttom"> 
       <input type="checkbox" class="hidden-checkbox">
       <div class="checkbox">
@@ -285,14 +371,21 @@
             <img  class="checkmark"  src="./img/Vector 3.png" alt="mark">
       </div> Крупногабаритные предметы </label>
 </div>
+</div>
+
 
 <div class="order__row">
-      <div class="order__time">
-            <img src="./img/time.png" alt="timer">
+      <div class="timer">
+            <div class="timer__items">
+              <div class="timer__item timer__hours">00</div>
+              <div class="timer__item timer__minutes">00</div>
+              <div class="timer__item timer__seconds">00</div>
+             
+            </div>
       </div>
 
       <div class="order__row_column">
-      <button  class="order__buttom">Заказать со скидой</button> 
+      <button type="submit" class="order__buttom">Заказать со скидой</button> 
       <div class="order__buttom_end">Перезвонить мне</div>  
       <div class="order__agree">
       <label> <input checked type="checkbox" class="agree"> Даю согласие на обработку данных</label></div>
@@ -336,8 +429,8 @@
       <div class="footer__text">Поделиться в <br/> 
             соц. сетях</div>
       <div class="footer__social">
-      <a target="_blank" href="https://vk.com"><img src="./img/vk2.png" alt="vk"></a>
-      <a target="_blank" href="https://ru-ru.facebook.com"><img src="./img/fb.png" alt="fb"></a> 
+            <a onclick="Share.vkontakte('URL','TITLE','IMG_PATH','DESC')"> <img src="./img/vk2.png" alt="vk"></a>
+            <a onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')"> <img src="./img/fb.png" alt="fb"></a>
       </div>
 </div>
 <div class="footer__column">
@@ -348,6 +441,6 @@
 </div>
 </div>
 </div>
-  
+<script src='./js/index.js'></script>
 </body>
 </html>     

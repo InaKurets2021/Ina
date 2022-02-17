@@ -59,6 +59,12 @@
 	select:focus {
 	box-shadow: 1px 1px 2px 0 var(--yellow);
 	}
+	.order__column2 {
+	display: flex;
+	padding: 0 0 0 25rem;
+	margin-bottom: 3rem;
+	}
+
 	.order__pay_title {
 	font-size: 1.2rem;
 	line-height: 1.5rem;
@@ -104,12 +110,50 @@
 	border: 1px solid var(--yellow);
 	border-radius: 50%;
 	}
-	.order__services {
-	font-size: 1.2rem;
-	line-height: 1.5rem;
-	font-weight: bold;
-	padding: 4rem 0 0 0;
-	}
+
+.order__js {
+display: flex;
+margin: 0 auto;
+padding: 4rem 1rem 0 0;
+gap: 1rem;
+}
+.order__services {
+font-size: 1.2rem;
+line-height: 1.5rem;
+font-weight: bold;
+}
+
+p#order__show {
+position: relative;
+cursor: pointer;
+}
+p#order__show::before {
+content: " ";
+position: absolute;
+top: 50%;
+left: 1rem;
+transform: translate(-58%) rotate(45deg);
+border-width: 3px 0 0 3px;
+border-style: solid;
+border-color: var(--black);
+padding: 5px;
+} 
+p#order__hidden {
+position: relative;
+cursor: pointer;
+}
+p#order__hidden:before {
+content: " ";
+position: absolute;
+top: 0%;
+left: 1rem;
+transform: translate(-58%) rotate(45deg);
+border-width: 0 3px 3px  0 ;
+border-style: solid;
+border-color: var(--black);
+padding: 5px;	
+}
+
 	.order__checkbox {
 	padding: 2rem 0;
 	display: flex;
@@ -160,6 +204,30 @@
 	}
 	.order__row_column {
 	margin: 0 auto;
+	}
+	.timer__items {
+		display: flex;
+		font-size: 6rem;
+	}
+	.timer__item {
+		position: relative;
+		min-width: 4rem;
+		margin: 0 0.5rem;
+		text-align: center;
+	}
+	.timer__item::before {
+		content: attr(data-title);
+		display: block;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		font-size: 1rem;
+	}
+	.timer__item:not(:last-child)::after {
+		content: ':';
+		position: absolute;
+		right: -1rem;
 	}
 	.order__buttom {
 	width: 15rem;
