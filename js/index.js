@@ -158,15 +158,35 @@ function toggleMenu() {
 
 
 /*8. отзыв */ 
-let coll = document.getElementsByClassName('reviews__link');
-for (let i = 0; i < coll.length; i++) {
-  coll[i].addEventListener('click', function () {
-    this.classList.toggle('active');
-    let nexttext = this.nextElementSibling;
-    if (nexttext.style.maxHeight) {
-      nexttext.style.maxHeight = null;
-    } else {
-      nexttext.style.maxHeight = nexttext.scrollHeight + 'px'
-    }
-  }) 
-  }
+function reviews__card_text(elt, he, tr){
+  var hs = he+'px',temp,
+  elt = document.querySelectorAll(elt);
+  [].forEach.call(elt, function(el,i){
+  el.insertAdjacentHTML('afterend', '<div class="reviews__link">Читать полностью</div>');
+  el.style.height = hs;
+  el.style.transition = tr+'s';
+  el.nextElementSibling.addEventListener('click', function(e){
+  var prev = this.previousElementSibling;
+  if (prev.style.height == hs) {
+  prev.style.height = prev.scrollHeight+'px';
+  setTimeout(()=>{
+  prev.style.height = 'auto';
+ prev.style.transition = '0s';
+  },tr*1000);
+ this.textContent = "Свернуть";
+ this.classList.add('open');
+ }
+else {
+prev.style.height = getComputedStyle(el).height;
+prev.style.transition = tr+'s';
+setTimeout(()=>prev.style.height = hs,0);
+this.textContent ='Читать полностью';
+this.classList.remove('open');
+}
+});
+});
+}
+onload = function(){
+reviews__card_text('.reviews__card_text',100, 0.4); //класс высота время анимации
+;
+};
