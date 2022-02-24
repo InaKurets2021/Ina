@@ -25,6 +25,9 @@
 	padding: 0 1rem;
 	}
 	@media (max-width: 900px){
+	.steps {
+	margin: 0 auto;
+	}
 	.steps__column {
 	flex: 0 0 100%;
 	}
@@ -55,7 +58,7 @@
 	padding: 0 1rem 0 0;
 	}
 	@media (max-width: 482px) {
-	.steps__number {
+		.steps__number {
 	display: block;
 	}
 	.steps__subtitle {
@@ -66,6 +69,12 @@
 		flex: 0 0 100%;
 	}
 	.steps__container {
-	 flex-wrap: wrap;
+	 flex-wrap: wrap;	
+	 padding: 0 1rem 0 3rem;
 	}
-	}
+	.steps__maintitle {
+	font-size: 1.2rem;
+line-height: 1.5rem;
+padding: 3rem 0 3rem 0;
+}
+}

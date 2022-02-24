@@ -6,7 +6,7 @@
 	font-weight: 600;
 	font-size: 2rem;
 	line-height: 2.5rem;
-	padding: 6rem 0 0 0;
+	padding: 5rem 0 0 0;
 	}
 	.price__subtitle {
 	text-align: center;
@@ -17,7 +17,7 @@
 	}
 	.price__container {
 	max-width: 75rem;
-	padding: 5rem 1rem 0 1rem;
+	padding: 3rem 1rem 0 1rem;
 	margin: 0 auto;
 	display: flex;
 	}
@@ -90,7 +90,7 @@
 	@media (max-width: 820px) {
 	.price {
 	background-color: var(--white);
-	padding-bottom: 8rem;
+	margin: 2rem 0;
 	}
 	.price__container {
 	padding-top: 0;
@@ -103,6 +103,12 @@
 	}
 	.price__card_main {
 	margin-bottom: 0;
+	border: none;
+	}
+	.price__subtitle {
+		display: none;
+		}
+	.price__card_main:hover {
 	border: none;
 	}
 	.price__allprice {
@@ -120,17 +126,15 @@
 	}
 	@media (max-width: 480px) {
 	.price {
-	padding-bottom: 8rem;
-	padding-bottom: 2rem;
+	padding-top: 0;
 	}
 	.price__title {
-	padding-top: 1.5rem;
+	padding-top: 0;
 	font-size: 1.3rem;
 	line-height: 1.5rem;
 	}
 	.price__subtitle {
-	font-size: 1rem;
-	line-height: 1.3rem;
+	display: none;
 	}
 	.price__card_title {
 	padding-top: 1.5rem;
