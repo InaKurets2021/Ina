@@ -58,7 +58,7 @@
 	padding: 0 1rem 0 0;
 	}
 	@media (max-width: 482px) {
-		.steps__number {
+	.steps__number {
 	display: block;
 	}
 	.steps__subtitle {
@@ -66,15 +66,15 @@
 	align-items: center;
 	}
 	.steps__column {
-		flex: 0 0 100%;
+	flex: 0 0 100%;
 	}
 	.steps__container {
-	 flex-wrap: wrap;	
-	 padding: 0 1rem 0 3rem;
+	flex-wrap: wrap;	
+	padding: 0 1rem 0 3rem;
 	}
 	.steps__maintitle {
 	font-size: 1.2rem;
-line-height: 1.5rem;
-padding: 3rem 0 3rem 0;
-}
-}
+	line-height: 1.5rem;
+	padding: 3rem 0 3rem 0;
+	}
+	}

@@ -106,8 +106,8 @@
 	border: none;
 	}
 	.price__subtitle {
-		display: none;
-		}
+	display: none;
+	}
 	.price__card_main:hover {
 	border: none;
 	}

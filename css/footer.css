@@ -38,7 +38,7 @@
 	text-decoration: underline; 
 	cursor: pointer;
 	} 
-	A:visited {
+	a:visited {
 	color: var(--black); /* Цвет посещенных ссылок */
 	}
 	.footer__contacts{
@@ -99,7 +99,7 @@
 	}
 	.footer__column {
 	text-align: center;
-		}
+	}
 	.footer__title {
 	padding-top: 0;
 	}
@@ -110,7 +110,6 @@
 	}
 	.footer__link {
 	display: block;
-	}
 	}
 	.footer__text {
 	display: none;
@@ -142,4 +141,4 @@
 	background-color: var(--white);
 	border: none;
 	}
-	
+ }
