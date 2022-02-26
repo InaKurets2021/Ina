@@ -36,9 +36,11 @@
 	}
 	a:hover { 
 	text-decoration: underline; 
-	color: var(--red);
 	cursor: pointer;
 	} 
+	a:visited {
+	color: var(--black); /* Цвет посещенных ссылок */
+	}
 	.footer__contacts{
 	display: flex;
 	gap: 2rem;
@@ -51,7 +53,12 @@
 	text-align: center;
 	}
 	.footer_email:hover {
-	color: var(--red);
+	color: var(--black);
+	}
+	a[href^="mailto:"] {
+	font-size: 1.2rem;
+  line-height: 1.5rem;
+	color: var(--black);
 	}
 	.footer__text {
 	text-align: center;
@@ -83,9 +90,6 @@
 	padding: 0.5rem 2rem;
 	cursor: pointer;
 	}
-	.footer__number:hover {
-	color: var(--red);
-	}
 	.footer__buttom_end {
 	display: none;
 	}
@@ -95,7 +99,9 @@
 	}
 	.footer__column {
 	text-align: center;
-	margin: 2.5rem auto;
+	}
+	.footer__title {
+	padding-top: 0;
 	}
 	.footer__subtitle {
 	font-weight: 500;
@@ -123,16 +129,16 @@
 	font-weight: 500;
 	font-size: 1.3rem;
 	line-height: 1.5rem;
-	display: flex;
+	display: inline-block;
 	background-color: var(--yellow);
 	cursor: pointer;
 	color: var(--black);
 	justify-content: center;
-	margin: 2.5rem 2rem;
+	margin: 1rem auto;
 	border: 1px solid var(--black);
 	}
 	.footer__buttom_end:hover {
 	background-color: var(--white);
 	border: none;
 	}
-	}
+ }

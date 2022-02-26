@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="./css/index.css">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
       <title>FirstProject</title>
+      
 </head>
 
 <body>
@@ -14,14 +15,17 @@
       <div class="container">
             <div class="header" id="header">
                   <div class="header__logo">MOVEE</div>
-                  <div class="header__menu"> 
+                  <div class="header__menu" id="header__menu"> 
                         <a href="#price">Цены</a>
                         <a href="#autopark">Автопарк </a>   
                         <a href="#reviews">Отзывы </a>    
                         <a href="#order">Контакты</a>
                   </div>
-                  <div class="header__phone">8(029)999-12-13</div>
-                  <div class="header__burger"></div>
+                  <div class="header__phone">
+                        <a href="tel:8(029)-999-12-13">8(029)-999-12-13</a></div>
+                  <button class="header__burger" id="header__burger" onclick="toggleMenu()"> 
+                        <div class="line"></div>
+                  </button> 
             </div>
             <div class="banner__content">
             <div class="banner__column">
@@ -47,42 +51,43 @@
             <img class="banner__img"src="./img/man.png" alt="man">
       </div>
             </div>
+            
       </div>
 </div>
 
 <div class="steps">
       <div class="steps__maintitle">Как это происходит?</div>
       <div class="steps__container">
-      <div class="steps__content">
-            <div class="steps__column">
-                  <div class="steps__number">01</div>
-                  <div class="steps__one">
-                        <div class="steps__subtitle">Оценка объема предстоящих работ</div>
-                        <div class="steps__text">Стоимость переезда зависит от количества комнат, вещей и мебели.</div> 
+            <div class="steps__content">
+                  <div class="steps__column">
+                        <div class="steps__number">01</div>
+                        <div class="steps__one">
+                              <div class="steps__subtitle">Оценка объема предстоящих работ</div>
+                              <div class="steps__text">Стоимость переезда зависит от количества комнат, вещей и мебели.</div> 
+                        </div>
+                  </div>
+                  <div class="steps__column">
+                        <div class="steps__number">02</div>
+                        <div class="steps__two">
+                              <div class="steps__subtitle">Упаковка вещей</div>
+                              <div class="steps__text">Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно.</div> 
+                        </div>
+                  </div>
+                  <div class="steps__column">
+                        <div class="steps__number">03</div>
+                        <div class="steps__three">
+                              <div class="steps__subtitle">Погрузка и транспортировка вещей</div>
+                              <div class="steps__text">В нашем автопарке имеются машины, подходящие для мебели любых габаритов.</div> 
+                        </div>
+                  </div>
+                  <div class="steps__column">
+                        <div class="steps__number">04</div>
+                        <div class="steps__four">
+                              <div class="steps__subtitle">Распаковка и расстановка мебели</div>
+                              <div class="steps__text">Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.</div> 
+                        </div>
                   </div>
             </div>
-            <div class="steps__column">
-                  <div class="steps__number">02</div>
-                  <div class="steps__two">
-                        <div class="steps__subtitle">Упаковка вещей</div>
-                        <div class="steps__text">Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно.</div> 
-                  </div>
-            </div>
-            <div class="steps__column">
-                  <div class="steps__number">03</div>
-                  <div class="steps__three">
-                        <div class="steps__subtitle">Погрузка и транспортировка вещей</div>
-                        <div class="steps__text">В нашем автопарке имеются машины, подходящие для мебели любых габаритов.</div> 
-                  </div>
-            </div>
-            <div class="steps__column">
-                  <div class="steps__number">04</div>
-                  <div class="steps__four">
-                        <div class="steps__subtitle">Распаковка и расстановка мебели</div>
-                        <div class="steps__text">Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.</div> 
-                  </div>
-            </div>
-      </div>
       </div>
 </div>
 
@@ -129,34 +134,88 @@
       <div class="autopark__subtitle">10 видов автомобилей от 800 кг до 10 тонн</div>
       <div class="autopark__container">
             <div class="autopark__menu">
-                  <button class="autopark__link">Газели</button>
-                  <button class="autopark__link">Каблуки</button>
-                  <button class="autopark__link">Грузовики</button>
+                  <button class="autopark__link" onclick="currentSlide(1)">Газели</button>
+                  <button class="autopark__link" onclick="currentSlide(2)">Грузовики</button>
+                  <button class="autopark__link" onclick="currentSlide(3)">Каблуки</button>
             </div>
-            <div class="autopark__content">
-            <div class="autopark__column">
-                  <div class="autopark__maintext">Газель 3 метра</div>
-                  <div class="autopark__text_column">
-                        <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
-                        <div class="autopark__text">Ширина 2 м</div>
+            <div class="slider">
+                  <div class="autopark__content">
+                        <div class="autopark__column">
+                              <div class="autopark__maintext">Газель 3 метра</div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Ширина 2 м</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Высота 2 м</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Объем 16 м³</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Грузоподъемность 1,5 т</div>
+                              </div>
+                              <span class="autopark_buttom">Заказать</span>
+                        </div>
+                        <div class="autopark__column">
+                              <img class="autopark__img" src="./img/lorry.png" alt="lorry">
+                        </div>
                   </div>
-                  <div class="autopark__text_column">
-                        <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
-                        <div class="autopark__text">Высота 2 м</div>
+                  <div class="autopark__content">
+                  <div class="autopark__column">
+                        <div class="autopark__maintext">Грузовик 3 метра</div>
+                        <div class="autopark__text_column">
+                              <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                              <div class="autopark__text">Ширина 3 м</div>
+                        </div>
+                        <div class="autopark__text_column">
+                              <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                              <div class="autopark__text">Высота 3 м</div>
+                        </div>
+                        <div class="autopark__text_column">
+                              <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                              <div class="autopark__text">Объем 20 м³</div>
+                        </div>
+                        <div class="autopark__text_column">
+                              <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                              <div class="autopark__text">Грузоподъемность 2 т</div>
+                        </div>
+                        <span class="autopark_buttom">Заказать</span>
                   </div>
-                  <div class="autopark__text_column">
-                        <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
-                        <div class="autopark__text">Объем 16 м³</div>
+                  <div class="autopark__column">
+                        <img class="autopark__img" src="./img/truck_yel.png" alt="lorry">
                   </div>
-                  <div class="autopark__text_column">
-                        <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
-                        <div class="autopark__text">Грузоподъемность 1,5 т</div>
                   </div>
-                  <span class="autopark_buttom">Заказать</span>
-            </div>
-            <div class="autopark__column">
-             <img class="autopark__img" src="./img/lorry.png" alt="lorry">
-            </div>
+                  <div class="autopark__content">
+                        <div class="autopark__column">
+                              <div class="autopark__maintext">Каблук 2 метра</div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Ширина 1.8 м</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Высота 1.2 м</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Объем 8 м³</div>
+                              </div>
+                              <div class="autopark__text_column">
+                                    <img class="autopark_vector" src="./img/Vector4.png" alt="vector">
+                                    <div class="autopark__text">Грузоподъемность 0,8 т</div>
+                              </div>
+                              <span class="autopark_buttom">Заказать</span>
+                        </div>
+                        <div class="autopark__column">
+                              <img class="autopark__img" src="./img/truck blue.png" alt="lorry">
+                        </div>
+                  </div>
+                  <a class="prev" onclick="minusSlide()">&#10094;</a>
+                  <a class="next" onclick="plusSlide()">&#10095;</a>
             </div>
             <div class="autopark__end">Газель 3 метра/1.5тонны</div>
             <ul class="points">
@@ -169,7 +228,7 @@
             <div class="autopark_buttom_end">Заказать</div>                
       </div>
 </div> 
- 
+
 <div class="reviews" id="reviews">
       <div class="reviews__title">Отзывы</div>
       <div class="reviews__container">
@@ -179,29 +238,26 @@
                   <p class="reviews__card_number">24.03.2019</p>
                   <img class="reviews__card_stars" src="./img/stars.png" alt="stars"> 
             </div>   
-            <p class="reviews__card_text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
-                        во двор, он проявил себя как компетентный 
-                        и профессиональный сотрудник, за что ему огромное...</p>  
-            <span class="reviews__link">Читать полностью</span>
+            <p class="reviews__card_text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное спасибо...</p>  
+            <button class="reviews__link"></button>
             </div>
             <div class="reviews__card_main">
                  <h2 class="reviews__card_title">Светлана Васильевна</h2> 
                  <div class="reviews__card_subtitle">
                  <p class="reviews__card_number">13.09.2019</p> 
                  <img class="reviews__card_stars" src="./img/stars.png" alt="stars"> 
-            </div> 
-            <p class="reviews__card_text">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  Водитель заранее позвонил, предупредил, что задерживается.
-                        Когда....</p>
-            <span class="reviews__link">Читать полностью</span>     
-            </div>
+                  </div> 
+            <p class="reviews__card_text">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  Водитель заранее позвонил, предупредил, что задерживается.Когда....</p>
+            <button class="reviews__link"></button>
+             </div>
             <div class="reviews__card">
                  <h3 class="reviews__card_title">Ольга Петрова</h3> 
                  <div class="reviews__card_subtitle">
                   <p class="reviews__card_number">11.11.2019</p>
                   <img class="reviews__card_stars" src="./img/stars.png" alt="stars"> 
-            </div> 
+                  </div> 
             <p class="reviews__card_text">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо всяких заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности. Особая благодарность Александру за его...</p>
-            <span class="reviews__link">Читать полностью</span>
+            <button class="reviews__link"></button>
             </div>
       </div>
       <button class="reviews_button">Все отзывы</button> 
@@ -211,143 +267,147 @@
       <div class="order__container"> 
       <div class="order__maintitle">Закажи  переезд прямо сейчас со скидкой %</div>
       <div class="order__subtitle">Мы перезвоним в течении 10 секунд</div>
- <form name="order__form" method="get" action="#">    
-<div class="order__column_form">
-<div><input placeholder="Ваше имя" type="text" name="userpass" value=""></div>
-<div><input placeholder="Телефон" type="tel" name="usertel" value=""></div>
-</div>
-<div class="order__city">
-<p>Укажите область</p>
-<p>Укажите город</p>
-</div>
-<div class="order__column">
-<select  name="oblast" >
-      <option value="Minsk">Минская</option>
-      <option value="Vitebsk">Витебская</option>
-      <option value="Mogilev">Могилевская</option>
-      <option value="Gomel">Гомельская</option>
-      <option value="Brest">Брестская</option>
-      <option value="Grodno">Гродненская</option>
-</select>
-<select name="city" >
-            <option value="Minsk">Минск</option>
-            <option value="Vitebsk">Витебск</option>
-            <option value="Mogilev">Могилев</option>
-            <option value="Gomel">Гомель</option>
-            <option value="Brest">Брест</option>
-            <option value="Grodno">Гродно</option>
-</select>
-</div>
-
-<div class="order__pay">
-      <p class="order__pay_title">Способ оплаты</p>
-      <div class="order__radio">
-      <label class="order__pay_buttom" >
-      <input type="radio" class="hidden-radio" name="radio1" value="money"> 
-      <div class="radio" >
-            <img class="radiomark"src="./img/radio.png" alt="radio_point">   </div>  Наличными курьеру </label> 
-      <label class="order__pay_buttom" name="radio2">
-            <input type="radio" class="hidden-radio" name="radio1" value="card"> 
-            <div class="radio" >
-            <img class="radiomark" src="./img/radio.png" alt="radio_point"></div>  Картой курьеру </label> 
-      <label class="order__pay_buttom" name="radio3">
-            <input type="radio" class="hidden-radio" name="radio1" value="bank"> 
-            <div class="radio" >
-            <img class="radiomark" src="./img/radio.png" alt="radio_point"></div>  Банковский перевод </label> </div>
-</div>
-
-<p class="order__services">Дополнительные услуги</p>
-
-<div class="order__checkbox">
-<label class="checkbox__buttom"> 
-      <input type="checkbox" class="hidden-checkbox">
-      <div class="checkbox">
-            <img  class="checkmark"  src="./img/Vector 3.png" alt="mark">
-      </div> Вызов замерщика </label>
-<label class="checkbox__buttom">
-      <input type="checkbox" class="hidden-checkbox">
-      <div class="checkbox">
-            <img  class="checkmark"  src="./img/Vector 3.png" alt="mark">
-      </div> Упаковка для хрупких предметов </label>
-<label class="checkbox__buttom"> 
-      <input type="checkbox" class="hidden-checkbox">
-      <div class="checkbox">
-            <img  class="checkmark"  src="./img/Vector 3.png" alt="mark">
-      </div> Кран </label>
-<label class="checkbox__buttom"> 
-      <input type="checkbox" class="hidden-checkbox">
-      <div class="checkbox">
-            <img  class="checkmark"  src="./img/Vector 3.png" alt="mark">
-      </div> Сборка мебели </label>
-<label class="checkbox__buttom"> 
-      <input type="checkbox" class="hidden-checkbox">
-      <div class="checkbox">
-            <img  class="checkmark"  src="./img/Vector 3.png" alt="mark">
-      </div> Крупногабаритные предметы </label>
-</div>
-
-<div class="order__row">
-      <div class="order__time">
-            <img src="./img/time.png" alt="timer">
+      <form name="order__form" method="get" action="#" onsubmit="return validate ()">    
+            <div class="order__column_form">
+                  <div><input placeholder="Ваше имя" type="text" id="username" value=""></div>
+                  <div><input placeholder="Телефон" type="tel" id="usertel" value=""></div>
+            </div>
+            <div class="order__city">
+                  <p>Укажите область</p>
+                  <p>Укажите город</p>
+            </div>
+            <div class="order__column">
+                  <select  name="oblast" id="a">
+                        <option value="Minsk">Минская</option>
+                        <option value="Vitebsk">Витебская</option>
+                        <option value="Mogilev">Могилевская</option>
+                        <option value="Gomel">Гомельская</option>
+                        <option value="Brest">Брестская</option>
+                        <option value="Grodno">Гродненская</option>
+                  </select>
+                  <select name="city" id="b" >
+                        <option value="Minsk">Минск</option>
+                        <option value="Vitebsk">Витебск</option>
+                        <option value="Mogilev">Могилев</option>
+                        <option value="Gomel">Гомель</option>
+                        <option value="Brest">Брест</option>
+                        <option value="Grodno">Гродно</option>
+                  </select>
+            </div>
+            <div class="order__city2">
+                  <p>Введите название города</p>
+            </div>
+            <div class="order__column2">
+                  <input type='text' id='cityvalue'/>   
+            </div>
+            <div class="order__pay">
+                  <p class="order__pay_title">Способ оплаты</p>
+                  <div class="order__radio">
+                        <label class="order__pay_buttom" >
+                        <input type="radio" class="hidden-radio" name="radio1" value="money"> 
+                        <div class="radio" >
+                        <img class="radiomark"src="./img/radio.png" alt="radio_point"></div>Наличными курьеру</label> 
+                        <label class="order__pay_buttom" name="radio2">
+                        <input type="radio" class="hidden-radio" name="radio1" value="card"> 
+                        <div class="radio" >
+                        <img class="radiomark" src="./img/radio.png" alt="radio_point"></div>Картой курьеру</label> 
+                        <label class="order__pay_buttom" name="radio3">
+                        <input type="radio" class="hidden-radio" name="radio1" value="bank"> 
+                        <div class="radio" >
+                        <img class="radiomark" src="./img/radio.png" alt="radio_point"></div>Банковский перевод</label>
+                  </div>
+            </div>
+            <div class="order__js">
+                  <p class="order__services">Дополнительные услуги</p>
+                  <p id="order__show" onclick="order__show()"></p>
+                  <p id="order__hidden"; style="display:none" onclick="order__hidden()"></p>
+            </div>
+            <div id="checkbox_hide" style="display:none">
+                  <div class="order__checkbox"> 
+                        <label class="checkbox__buttom"> 
+                              <input type="checkbox" class="hidden-checkbox">
+                              <div class="checkbox">
+                        <img  class="checkmark"  src="./img/Vector 3.png" alt="mark"></div> Вызов замерщика </label>
+                        <label class="checkbox__buttom">
+                              <input type="checkbox" class="hidden-checkbox">
+                              <div class="checkbox">
+                        <img  class="checkmark"  src="./img/Vector 3.png" alt="mark"></div> Упаковка для хрупких предметов </label>
+                        <label class="checkbox__buttom"> 
+                              <input type="checkbox" class="hidden-checkbox">
+                              <div class="checkbox">
+                        <img  class="checkmark"  src="./img/Vector 3.png" alt="mark"></div> Кран </label>
+                        <label class="checkbox__buttom"> 
+                              <input type="checkbox" class="hidden-checkbox">
+                              <div class="checkbox">
+                        <img  class="checkmark"  src="./img/Vector 3.png" alt="mark"></div> Сборка мебели </label>
+                        <label class="checkbox__buttom"> 
+                              <input type="checkbox" class="hidden-checkbox">
+                              <div class="checkbox">
+                        <img  class="checkmark"  src="./img/Vector 3.png" alt="mark"></div> Крупногабаритные предметы </label>
+                  </div>
+            </div>
+            <div class="order__row">
+                  <div class="timer">
+                        <div class="timer__items">
+                              <div class="timer__item timer__hours">00</div>
+                              <div class="timer__item timer__minutes">00</div>
+                              <div class="timer__item timer__seconds">00</div>
+                         </div>
+                  </div>
+                  <div class="order__row_column">
+                        <button type="submit" class="order__buttom">Заказать со скидой</button> 
+                        <div class="order__buttom_end">Перезвонить мне</div>  
+                        <div class="order__agree">
+                              <label> <input checked type="checkbox" class="agree"> Даю согласие на обработку данных</label></div>
+                  </div>
+            </div>
+      </form>
       </div>
-
-      <div class="order__row_column">
-      <button  class="order__buttom">Заказать со скидой</button> 
-      <div class="order__buttom_end">Перезвонить мне</div>  
-      <div class="order__agree">
-      <label> <input checked type="checkbox" class="agree"> Даю согласие на обработку данных</label></div>
-</div>
-</div>
-
-</form>
-</div>
 </div>  
 
 <section class="map">
-     
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.2060667877704!2d23.690351415232982!3d52.094181175451645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210b9ff6b8aec5%3A0x86a32a37535f25dc!2zQ2FycGUgZGllbSAtINCb0L7QstC4INC80L7QvNC10L3Rgg!5e0!3m2!1sru!2sby!4v1643454886132!5m2!1sru!2sby" width="100%" height="666" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.2060667877704!2d23.690351415232982!3d52.094181175451645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210b9ff6b8aec5%3A0x86a32a37535f25dc!2zQ2FycGUgZGllbSAtINCb0L7QstC4INC80L7QvNC10L3Rgg!5e0!3m2!1sru!2sby!4v1643454886132!5m2!1sru!2sby" width="100%" height="666" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 
 <div class="footer">
-<div class="footer__container">
-<div class="footer__column">
-      <div class="footer__title">MOVEE</div>
-      <div class="footer__subtitle">Политика 
-            конфиденциальнности</div>
-      <div class="footer__subtitle">Соглашение на обработку персональных данных</div>    
-</div>
-<div class="footer__column">
-<div class="footer__link">
-      <a href="#header">Главная</a>
-      <a href="#price">Цены</a>
-      <a href="#autopark">Автопарк </a>   
-      <a href="#reviews">Отзывы </a>    
-      <a href="#order">Контакты</a>
-</div>
-</div>
-<div class="footer__column">
-<div class="footer__contacts">
-      <a target="_blank" href="https://www.youtube.com"><img src="./img/yut.png" alt="youtube"></a>
-      <a target="_blank" href="https://vk.com"><img src="./img/vk.png" alt="vk"></a>
-      <a target="_blank" href="https://ru-ru.facebook.com"><img src="./img/f.png" alt="fb"></a>
-      <a target="_blank" href="https://www.instagram.com"><img src="./img/insta.png" alt="insta"></a>
-</div> 
-      <div class="footer_email">hello@movee.ru</div>
-      <div class="footer__text">Поделиться в <br/> 
-            соц. сетях</div>
-      <div class="footer__social">
-      <a target="_blank" href="https://vk.com"><img src="./img/vk2.png" alt="vk"></a>
-      <a target="_blank" href="https://ru-ru.facebook.com"><img src="./img/fb.png" alt="fb"></a> 
+      <div class="footer__container">
+            <div class="footer__column">
+                  <div class="footer__title">MOVEE</div>
+                  <div class="footer__subtitle">Политика конфиденциальнности</div>
+                  <div class="footer__subtitle">Соглашение на обработку персональных данных</div>    
+            </div>
+            <div class="footer__column">
+                  <div class="footer__link">
+                        <a href="#header">Главная</a>
+                        <a href="#price">Цены</a>
+                        <a href="#autopark">Автопарк </a>   
+                        <a href="#reviews">Отзывы </a>    
+                        <a href="#order">Контакты</a>
+                  </div>
+            </div>
+            <div class="footer__column">
+                  <div class="footer__contacts">
+                        <a target="_blank" href="https://www.youtube.com"><img src="./img/yut.png" alt="youtube"></a>
+                        <a target="_blank" href="https://vk.com"><img src="./img/vk.png" alt="vk"></a>
+                        <a target="_blank" href="https://ru-ru.facebook.com"><img src="./img/f.png" alt="fb"></a>
+                        <a target="_blank" href="https://www.instagram.com"><img src="./img/insta.png" alt="insta"></a>
+                  </div> 
+                  <div class="footer_email"><a href="mailto:hello@movee.ru&body=привет?subject=вопрос">hello@movee.ru</a></div>
+                  <div class="footer__text">Поделиться в <br/> соц. сетях</div>
+                  <div class="footer__social">
+                        <a onclick="Share.vkontakte('URL','TITLE','IMG_PATH','DESC')"> <img src="./img/vk2.png" alt="vk"></a>
+                        <a onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')"> <img src="./img/fb.png" alt="fb"></a>
+                  </div>
+            </div>
+            <div class="footer__column">
+                  <button class="footer__buttom">Обратный звонок</button> 
+                  <div class="footer__number"><a href="tel:8(029)-999-12-13">8(029)-999-12-13</a></div>
+                  <div class="footer__buttom_end">Заказать</div>  
+            </div>
       </div>
 </div>
-<div class="footer__column">
-      <button class="footer__buttom">Обратный звонок</button> 
-      <div class="footer__number">8 (029)-999-12-13
-</div>
-<div class="footer__buttom_end">Заказать</div>  
-</div>
-</div>
-</div>
-  
+
+<script src='./js/index.js'></script>
+
 </body>
 </html>     
